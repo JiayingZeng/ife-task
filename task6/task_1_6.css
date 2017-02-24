@@ -1,0 +1,379 @@
+/*======== question========*/
+/*段落、单词首字母大写问题*/
+/*字体是否可以合并声明*/
+
+/*======== reset  css========*/
+body,
+h1,h2,h3,
+ul,
+p,
+span,
+figure,
+blockquote {
+    padding: 0;
+    margin: 0;
+    line-height: 1;
+}
+body, .wrap, .info-caption, 
+h1, h2, h3 {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body {
+    font-size: 10px;
+    font-family: sans-serif;
+}
+.wrap {
+    width: 980px;
+    height: 1386px;
+    margin: 0 auto;
+    padding: 0 43px;
+    border: 1px solid #eee;
+}
+
+/*======== header ========*/
+header {
+    height: 61px;
+    border-bottom: 2px solid #938e8e;
+}
+header h1, header time {
+    font-size: 12px;
+    font-family: "黑体";
+    padding: 45px 0 0;
+}
+header h1 {
+    background: #D55D5C;
+    width: 110px;
+    height: 61px;
+    float: left;
+    color: #fff;
+    text-align: center;
+}
+header time {
+    float: right;
+    color: #d45d5c;
+}
+
+/*================ main ================*/
+
+/*======== news1 ========*/
+.news1 {
+    padding: 35px 0 0;
+    overflow: hidden;
+}
+.news1 .caption {
+    float: right;
+    width: 203px;
+    border-top: 2px solid #cc8091;
+    font-family: "微软雅黑";
+}
+/*.news1 .caption h2 {
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 35px;
+    text-transform: uppercase;
+}
+.news1 .caption h2 span {
+    display: inline-block;
+    border-bottom: 1px solid #000;
+}
+.news1 .caption h2 span:first-letter {
+    font-size: 24px;
+}*/
+/*======== 对.caption h2优化  ========*/
+.news1 .caption h2 {
+	font-size: 24px;
+	font-weight: normal;
+	font-variant: small-caps;
+	text-decoration: underline;
+	line-height: 35px;
+	
+}
+.news1 .caption  h2+p {
+    font-size: 12px;
+    font-family: "楷体";
+    font-style: italic;
+    line-height: 10px;
+    color: #676767;
+    text-decoration: none;
+}
+.news1 .caption .b-keyword {
+    font-size:  116px;
+    font-style: italic;
+    color: #75b86b;
+    margin: 23px 0 20px -20px;
+}
+.news1 .caption .s-keyword p:first-of-type {
+    float: left;
+    font-size: 55px;
+    color: #cc8091;
+    padding-right: 10px;
+}
+.news1 .caption .s-keyword p:nth-of-type(2) {
+    font-size: 21px;
+    color: #CC8091;
+    padding: 10px 0 0;
+}
+.news1 .caption .s-keyword p:nth-of-type(2) span {
+    font-size: 12px;
+    color: #999;
+}
+.news1 figure {
+    background: url(img/task_1_6_1_03.png) no-repeat;
+    width: 641px;
+    height: 301px;
+}
+.news1 .bg-left,
+.news1 .bg-right {
+    width: 191px;
+    height: 301px;
+}
+.news1 .bg-left {
+    float: left;
+    background: rgba(0, 125, 0, .3);
+}
+.news1 .bg-right {
+    float: right;
+    background: rgba(125, 0, 0, .2);
+}
+.news1 section {
+    float: left;
+    width: 200px;
+    margin: 40px 22px 70px 0;
+}
+.news1 section h3 {
+    font-family: "微软雅黑";
+    font-size: 16px;
+    font-weight: normal;
+    margin-bottom: 10px;
+    text-decoration: underline;
+}
+.news1 .what h3 {
+    color: #418c59;
+}
+.news1 .when h3{
+    color: #d2994f;
+}
+.news1 .how h3 {
+    color: #cc7680;
+}
+.news1 section p {
+    font-family: simsun;
+    font-size: 12px;
+    color: #767777;
+    line-height: 16px;
+}
+.news1 .how p {
+    line-height: 20px;
+}
+.news1 .how p:nth-of-type(2) {
+    font-family: "微软雅黑";
+    padding-top: 15px;
+    opacity: .7;
+}
+.news1 .how p:nth-of-type(2) span {
+    color: #cd4a48;
+    font-style: italic;
+}
+
+/*======== news2 ========*/
+.news2 {
+    overflow: hidden;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #938e8e;
+}
+
+/*======== essay ========*/
+.news2 .essay {
+    float: left;
+    width: 415px;
+}
+.news2 .essay img {
+    float: right;
+    padding: 25px 2px 15px 15px;
+}
+.news2 .essay h2 {
+    text-transform: uppercase;
+    font-family: "黑体";
+    font-weight: bold;
+    font-size: 42px;
+    color: #11456b;
+    border-bottom: 2px solid #11456B;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+.news2 .essay h2 span {
+    font-size: 72px;
+    font-style: italic;
+    color: #f5e327;
+
+}
+.news2 .essay h2 small {
+    font-size: 33px;
+}
+.news2 .essay p {
+    font-size: 12px;
+    color: #767777;
+    line-height: 16px;
+    text-indent: 2em;
+    text-align: left;
+}
+.news2 .essay p:first-of-type {
+    text-indent: 0;
+}
+.news2 .essay p span {
+    font-size: 70px;
+    font-family: "微软雅黑";
+    color: #F5E327;
+    float: left;
+    padding-right: 6px;
+}
+
+/*======== news2-aside ========*/
+.news2 .news2-aside {
+    float: right;
+    width: 458px;
+}
+.news2-aside .aside-pic {
+    background: url(img/task_1_6_1_07.png) no-repeat;
+    height: 257px;
+    position: relative;
+}
+.news2-aside .aside-pic .pic-caption {
+    background: rgba(0, 0, 0, .4);
+    height: 61px;
+    width: 458px;
+    position: absolute;
+    bottom: 0;
+}
+.news2-aside .aside-pic h3 {
+    height: 44px;
+    line-height: 44px;
+    color: #fff;
+    font-size: 26px;
+    font-family: "微软雅黑";
+    font-weight: normal;
+    border-left: 3px solid #72b16a;
+    margin: 9px 0 0 30px;
+    padding-left: 10px;
+    word-spacing: 140%;/*letter-spacing没反应*/
+}
+.news2-aside .aside-pic h3 span {
+    font-size: 12px;
+    font-style: italic;
+    color: #72b16a;
+}
+.news2-aside .info {
+    height: 318px;
+    background: #eeeed6;
+    margin: 20px 0 0;
+    padding: 38px 20px 0 30px;
+    position: relative;
+}
+.news2-aside .info-caption {
+    width: 260px;
+    height: 160px;
+    background: #d45c5b;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: #fff;
+    padding: 40px 5px;
+    font-family: "黑体";
+}
+.news2-aside .info-caption h3 {
+    font-size: 21px;
+    font-style: italic;
+    font-weight: normal;
+    text-transform: uppercase;
+    line-height: 24px;
+}
+.news2-aside .info-caption h3 span {
+    font-family: "微软雅黑";
+    font-style: normal;
+    font-size: 110px;
+    line-height: 86px;
+    float: left;
+    border-right: 2px solid #fff;
+    padding-right: 2px;
+    margin: -4px 10px 0 0;
+}
+.news2-aside .info-caption p {
+    font-size: 12px;
+    color: #fff;
+    line-height: 12px;
+    padding-top: 6px;
+}
+.news2-aside .info ul {
+    list-style: none;
+}
+.news2-aside .info ul li {
+    background: url(img/task_1_6_1_14.png) bottom left no-repeat;
+    padding-left: 20px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-family: simsun;
+    color: #5a5b5b;
+    text-align: left;
+}
+.news2-aside .info ul li span {
+    font-size: 12px;
+    font-style: italic;
+    text-align: right;
+}
+.news2-aside .info blockquote {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 165px;
+    quotes: '“' '”';
+    font-family: "黑体";
+    font-size: 14px;
+    font-style: italic;
+    color: #5a5b5b;
+    line-height: 16px;
+    text-align: left;
+}
+.news2-aside .info blockquote p:before {
+    content: open-quote;
+    vertical-align: text-bottom;
+    margin: 0 5px -6px -35px;
+}
+.news2-aside .info blockquote p:after {
+    content: close-quote;
+    vertical-align: text-top;
+    margin-top: 24px;
+    margin-left: 130px;
+}
+.news2-aside .info blockquote p:before,
+.news2-aside .info blockquote p:after {
+    line-height: 0;
+    font-size: 72px;
+    font-style: normal;
+    color: #d45d5c;
+    display: inline-block;
+}
+
+/*======== footer ========*/
+footer {
+    text-align: right;
+    font-size: 12px;
+    font-family: "黑体";
+    color: #d45d5c;
+    padding-top: 2px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
