@@ -1,0 +1,341 @@
+/*========= reset css =========*/
+body {
+	padding: 0;
+	font-family: "微软雅黑","Microsoft YaHei","黑体","Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size: 14px;
+	line-height: 1;
+}
+.wrapper {
+	width: 100%;
+}
+.container {
+	width: 1280px;
+	margin: 0 auto;
+	box-sizing: border-box;
+}
+.mask {
+	height: 100%;
+}
+body,
+h1,h2,h3,h4,p,ul,
+button,input,select,figure {
+	margin: 0;
+}
+ul {
+	padding: 0;
+	list-style: none;
+}
+a {
+	text-decoration: none;
+}
+img {
+	border: 0;
+}
+button,input,select,option {
+	padding: 0;
+	border: 0;
+	outline: none;
+	vertical-align: baseline;
+}
+.clearfix {
+	display: block;
+	content: " ";
+	height: 0;
+	clear: both;
+}
+
+
+/*======================== sprite ========================*/
+.header h1,
+.header nav .login i,
+.introduction .intro1 i,
+.introduction .intro2 i,
+.introduction .intro3 i,
+.introduction .intro4 i,
+.echo i {
+	background-image: url(task7_img/task7.png);
+	background-repeat: no-repeat;
+	display: block;
+}
+
+/*======================== header ========================*/
+.header {
+	height: 56px;
+	padding: 0 56px 0;
+	background: #fff;
+}
+.header h1 {
+	float: left;
+	background-position: -93px 0;
+	width: 106px;
+	height: 31px;
+	margin: 15px 0;
+	padding: 0 0 0 35px;
+	line-height: 31px;
+	font-family: "黑体";
+	font-size: 21px;
+	color: #393a3a;
+}
+.header nav ul {
+	float: right;
+}
+.header nav ul li {
+	float: left;
+	padding-left: 45px;
+}
+.header nav li a {
+	display: inline-block;
+	width: 65px;
+	text-align: center;
+	font-size: 14px;
+	line-height: 53px;
+}
+.header nav li a:link,
+.header nav li a:visited {
+	color: #787b83;
+}
+.header nav li a:hover,
+.header nav li a:active {
+	color: #e74f4d;
+	border-bottom: 3px solid #e74f4d;
+}
+/*============================= ！！雪碧图的运用技巧待优化 =============================*/
+.header nav li.login i {
+	display: inline;
+	float: left;
+	background-position: -107px -136px;
+	height: 17px;
+	width: 14px;
+	margin: 18px 0 0;
+}
+.header nav li.login a {
+	display: inline;
+	padding-left: 5px;
+	color: #e74f4d;
+}
+.header nav li.login a:hover,
+.header nav li.login a:active {
+	color: #e74f4d;
+	border: 0;
+}
+/*============================= banner =============================*/
+.banner {
+	background: url(task7_img/time-of-new-life.png) no-repeat;
+	background-size: cover;
+	height: 690px;
+}
+.banner .mask {
+	background: rgba(0, 0, 0, .2);
+}
+.banner .container {
+	padding: 225px 0 0 125px;
+	color: #fff;
+}
+.banner h2 {
+	font-size: 60px;
+	font-weight: lighter;
+}
+.banner p {
+	padding: 30px 0 65px;
+	font-size: 21px;
+	font-weight: lighter;
+	line-height: 28px;
+}
+.banner button {
+	width: 330px;
+	height: 65px;
+	background: #e74f4d;
+	color: #fff;
+	font-size: 30px;
+	font-family: "Microsoft YaHei";
+	font-weight: 100;
+	cursor: pointer;
+}
+/*======================== introduction ================*/
+.introduction ul li {
+	float: left;
+	width: 320px;
+	padding: 45px 0 85px;
+}
+.introduction ul i {
+	width: 42px;
+	height: 42px;
+	margin: 0 auto 45px auto;
+}
+.introduction ul p {
+	padding: 0 80px;
+	border-right: 2px solid #aba6a5;
+	text-align: center;
+	font-family: "黑体";
+	line-height: 18px;
+	color: #767777;
+} 
+.introduction ul li:last-of-type p {
+	border-right: 0;
+}
+.introduction .intro1 i {
+	background-position: 0 -94px;
+}
+.introduction .intro2 i {
+	background-position: -87px -94px;	
+}
+.introduction .intro3 i {
+	background-position: -44px -136px;	
+}
+.introduction .intro4 i {
+	background-position: -44px -94px;	
+}
+/*========================= echo =========================*/
+.echo {
+	height: 360px;
+	text-align: center;
+	background: #ededec;
+	
+}
+.echo .container{
+	padding: 85px 0 80px;
+}
+.echo h2 {
+	font-size: 54px;
+	font-family: "黑体";
+	font-weight: 100;
+	color: rgba(50, 51, 51, .5)
+}
+.echo i {
+	background-position: 0 0;
+	width: 91px;
+	height: 92px;
+	margin: 0 auto 50px;
+}
+/*========================= search-activity =========================*/
+.search-activity {
+	background: url(task7_img/view_map.png) no-repeat 0 bottom;
+	background-size: cover;
+	height: 338px;
+	text-align: center;
+}
+.search-activity .container {
+	padding: 50px 126px 130px;
+}
+.search-activity .mask {
+	background: rgba(170, 52, 51, .2);
+}
+.search-activity h2 {
+	color: #fff;
+	font-size: 21px;
+	font-weight: 100;
+}
+.search-activity h2:after {
+	content: "";
+	display: block;
+	width: 31px;
+	margin: 10px auto 20px;
+	border-bottom: 3px solid #fff;
+}
+.search-activity p {
+	color: #fff;
+	font-size: 12px;
+	margin: 0 0 50px;
+}
+.search-activity select,
+.search-activity input[type=submit] {
+	width: 234px;
+	height: 36px;
+	font-family: "Microsoft YaHei";
+}
+.search-activity select {
+	appearance: none;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	padding-left: 10px;
+	margin-right: 26px;
+	background: url(task7_img/dropdown.png) no-repeat right 10px center #fff;
+	color: #a8aaaa;
+	font-size: 12px;
+	
+}
+.search-activity select:focus {
+	border: 1px solid #cc7680;
+}
+.search-activity select option {
+	color: #323333;
+	background: #e3e3e4;
+}
+.search-activity input[type=submit] {
+	background: #e74f4d;
+	color: #fff;
+	cursor: pointer;
+	font-size: 14px;
+}
+/*========================= activity-show =========================*/
+.activity-show {
+	background: #f7f7f7;
+	height: 605px;
+}
+.activity-show .container {
+	padding: 100px 140px 115px;
+}
+.activity-show h2 {
+	text-indent: -1000px;
+	height: 0;
+}
+
+.activity-show figure {
+	float: left;
+	margin-right: 35px;
+}
+.activity-show figure.figure4 {
+	margin-right: 0;
+}
+.activity-show figure img {
+	width: 200px;
+	padding: 10px;
+	background: #fff;
+	border: 1px solid #eee;
+}
+.activity-show figure figcaption {
+	margin-top: 10px;
+	text-align: center;
+	color: #474342;
+	font-size: 16px;
+	font-family: "黑体";
+}
+.activity-show figure figcaption span {
+	display: block;
+	margin-top: 10px;
+	font-size: 14px;
+	opacity: .8;
+}
+.activity-show figure.figure2 figcaption {
+		margin: 0 -6px 10px 0;
+		font-size: 22px;
+		letter-spacing: 1em;
+}
+.activity-show figure.figure2 span {
+		letter-spacing: 0;
+}
+
+/*======================== @media ========================*/
+@media only screen and (max-width: 1280px) {
+	.banner {
+		background-position: 0 0;
+	}
+	.wrapper {
+		min-width: 1280px;
+	}
+}
+@media only screen and (min-width: 1281px) {
+	.banner {
+		background-position: 0;
+	}
+}
+
+
+
+
+
+
+
+
+
+
