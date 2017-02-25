@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ECharts NO.1 - 柱状图</title>
+    <script src="echarts.js"></script>
+    <style>
+        #main{width: 600px;height: 400px}
+    </style>
+</head>
+<body>
+<div id="main"></div>
+<script>
+    var myecharts = echarts.init(document.getElementById('main'));
+    var option = {
+        title: {
+            text: '12月份水果营业额',
+        },
+        tooltip:{},
+        legend: {
+            data: ['营业额']
+        },
+        xAxis: {
+            data: ['苹果', '香蕉', '杨桃', '草莓', '橘子', '青枣']
+        },
+        yAxis: {},
+        series: [{
+            name: '营业额',
+            type: 'bar',
+            data: [120, 80, 30, 200, 390, 200]
+        }]
+    };
+    myecharts.setOption(option);
+</script>
+</body>
+</html>
