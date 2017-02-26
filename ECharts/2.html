@@ -14,10 +14,11 @@
     var myecharts = echarts.init(document.getElementById('main'));
     var option = {
         textStyle: {
-            fontFamily: 'Helvetica,Arial,sans-serif',
+            fontFamily: '-apple-system, BlinkMacSystemFont, \"Segoe UI\", Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"',
             color: '#122740',
         },
         backgroundColor: '#D7E4EB',
+//        设置系列颜色
         color: ['#33748A','#33B6E3'],
         title: {
             text: 'What\'s my credit score?',
@@ -26,13 +27,28 @@
                 fontSize: 28,
                 fontWeight: 'bolder',
             },
-            padding: [30,0,0,40]
+            left: 55,
+            top: 30,
+            subtextStyle: {
+                fontSize: 22,
+                color: '#515154',
+            }
         },
         grid: {
-            containLabel: true
+            top: 166,
+            containLabel: true,
         },
         legend: {
             data: ['Population', 'GDP'],
+            top: 115,
+            left: 55,
+            itemWidth: 40,
+            itemHeight: 20,
+            itemGap: 35,
+            textStyle: {
+                fontSize: 18,
+            }
+//            borderRadius: 0,
         },
         tooltip: {
             trigger: 'axis',
@@ -48,12 +64,13 @@
                 lineStyle: {
                     color: '#F24849',
                     width: 3
-                }
+                },
             },
+
             // 坐标刻度相关
-//            axisTick: {
-//              alignWithLabel: true
-//            },
+            axisTick: {
+              alignWithLabel: true
+            },
             // 坐标轴刻度标签设置
             axisLabel: {
                 textStyle: {
@@ -66,9 +83,9 @@
             type: 'value',
             min: 0,
             max: 4,
+            inverse: true,
             interval: 1,
             position: 'right',
-            inverse: true,
             // 坐标轴相关设置
             axisLine: {
                 // 是否显示坐标轴
@@ -82,13 +99,21 @@
                 textStyle: {
                     fontSize: 18,
                 },
-            }
+            },
+            // 分割线
+            splitLine: {
+                lineStyle: {
+                    color: '#fff',
+                    width: 3,
+                }
+            },
         },
         series: [
             {
                 name: 'Population',
                 type: 'bar',
                 data: [0.5,0.7,0.7,0.6,0.5,1.1,1.2,1.1,1.7,1.8],
+//                柱间距离
                 barGap: 0,
                 itemStyle: {
 
